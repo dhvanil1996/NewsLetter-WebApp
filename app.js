@@ -39,7 +39,8 @@ app.post("/", function(req, res){
     const url = "https://us10.api.mailchimp.com/3.0/lists/99cab299ae";
     const options = {
         method: "POST",
-        auth: "dhvanil96:29b1c0582c84d95fe0ff6cd9cf89de28-us10"
+     // Put in API KEY here
+        auth: ""
 
     };
     const request = https.request(url, options, function(response){
@@ -60,9 +61,3 @@ app.post("/", function(req, res){
 app.post("/failure", function(req, res){
     res.redirect("/");
 })
-
-// API Key
-// 29b1c0582c84d95fe0ff6cd9cf89de28-us10
-
-// List ID
-// 99cab299ae
